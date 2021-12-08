@@ -1,0 +1,31 @@
+{
+  "name": "to-do-list",
+  "version": "1.0.0",
+  "description": "This project is for use of a simple list of  to do tasks",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oliverSCZ/to-do-list.git"
+  },
+  "keywords": [],
+  "author": "Oliver Coimbra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oliverSCZ/to-do-list.git/issues"
+  },
+  "homepage": "https://github.com/oliverSCZ/to-do-list.git#readme",
+    "devDependencies": {
+    "css-loader": "^6.5.1",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}
