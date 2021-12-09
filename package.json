@@ -1,5 +1,17 @@
 {
   "name": "to-do-list",
+  "jest": {
+    "resetMocks": false,
+    "setupFiles": [
+      "./src/__mocks__/global-html-mock.js",
+      "jest-localstorage-mock",
+      "./src/__mocks__/add-task.js",
+      "./src/__mocks__/delete-task.js",
+      "./src/__mocks__/edit-task.js",
+      "./src/__mocks__/change-state.js",
+      "./src/__mocks__/clear-all.js"
+    ]
+  },
   "version": "1.0.0",
   "description": "This project is for use of a simple list of  to do tasks",
   "private": true,
@@ -27,5 +39,10 @@
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
     "webpack-dev-server": "^4.6.0"
+  },
+  "dependencies": {
+    "jsdom": "^18.0.1",
+    "lodash": "^4.17.21"
   }
 }
+
