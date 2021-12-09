@@ -20,9 +20,6 @@ module.exports = {
   module: {
     rules: [
       {
-        'import/prefer-default-export': 'off',
-      },
-      {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
