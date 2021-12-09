@@ -4,8 +4,8 @@ import './style.css';
 import { changeState } from './events.js';
 
 export const listContainer = document.querySelector('.list');
-
-const tasks = [];
+// eslint-disable-next-line
+let tasks = [];
 export { tasks };
 
 export const saveTaskToLocal = (value) => {
@@ -79,7 +79,7 @@ _.forEach(liItem, (item, i) => {
       saveTaskToLocal(tasks);
       listContainer.innerHTML = '';
       populateList(tasks);
-      location.reload();
+      window.location.reload();
     });
   });
 

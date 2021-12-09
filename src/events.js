@@ -1,14 +1,14 @@
 import _ from 'lodash';
-
-import { addNewTask } from './class';
-
+// eslint-disable-next-line import/no-cycle
+import { addNewTask } from './class.js';
+// eslint-disable-next-line import/no-cycle
 import {
   saveTaskToLocal,
   tasks,
   removeAll,
   populateList,
   listContainer,
-} from './index';
+} from './index.js';
 
 export const inputTask = document.querySelector('.input-tasks');
 const clearTaskBtn = document.querySelector('.clear-btn');
@@ -45,6 +45,6 @@ clearTaskBtn.addEventListener('click', () => {
   removeAll();
   listContainer.innerHTML = '';
   populateList(tasks);
-  
-  location.reload();
+
+  window.location.reload();
 });
