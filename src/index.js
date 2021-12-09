@@ -1,11 +1,11 @@
 import _ from 'lodash';
 import './style.css';
-
+// eslint-disable-next-line
 import { changeState } from './events.js';
 
 export const listContainer = document.querySelector('.list');
 
-let tasks = [];
+const tasks = [];
 export { tasks };
 
 export const saveTaskToLocal = (value) => {
@@ -79,7 +79,6 @@ _.forEach(liItem, (item, i) => {
       saveTaskToLocal(tasks);
       listContainer.innerHTML = '';
       populateList(tasks);
-      
       location.reload();
     });
   });

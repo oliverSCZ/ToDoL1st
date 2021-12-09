@@ -1,7 +1,7 @@
 import _ from 'lodash';
-// eslint-disable-next-line import/no-cycle
+
 import { addNewTask } from './class';
-// eslint-disable-next-line import/no-cycle
+
 import {
   saveTaskToLocal,
   tasks,
@@ -45,6 +45,6 @@ clearTaskBtn.addEventListener('click', () => {
   removeAll();
   listContainer.innerHTML = '';
   populateList(tasks);
-  // eslint-disable-next-line
+  
   location.reload();
 });
