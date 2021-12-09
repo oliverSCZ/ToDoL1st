@@ -10,16 +10,19 @@
     <main class="container">
       <div class="title-div">
         <p class="title-to-do">Today's To Do</p>
-        <ion-icon name="refresh-outline" class="refresh-icon"></ion-icon>
+        <ion-icon
+          name="refresh-outline"
+          class="static-icons enter-icon"
+        ></ion-icon>
       </div>
-      <div class="input-div">
+      <form class="input-div">
         <input
           type="text"
           placeholder="Add to you list..."
           class="input-tasks"
         />
-        <ion-icon name="enter-outline" class="enter-icon"></ion-icon>
-      </div>
+        <ion-icon name="enter-outline" class="static-icons"></ion-icon>
+      </form>
       <ul class="list"></ul>
       <div class="clear-btn-div">
         <button class="clear-btn">Clear all completed</button>
