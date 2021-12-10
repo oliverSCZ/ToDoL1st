@@ -28,7 +28,7 @@ const updateTasks = (data) => {
   tasks = data;
 };
 
-export const removeAll = () => {
+export const removeCompleted = () => {
   updateTasks(tasks.filter((task) => task.completed === false));
   tasks.forEach((task, i) => {
     task.index = i + 1;

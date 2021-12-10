@@ -5,7 +5,7 @@ import { addNewTask } from './class.js';
 import {
   saveTaskToLocal,
   tasks,
-  removeAll,
+  removeCompleted,
   populateList,
   listContainer,
 } from './index.js';
@@ -42,7 +42,7 @@ inputTask.addEventListener('keydown', (e) => {
 });
 
 clearTaskBtn.addEventListener('click', () => {
-  removeAll();
+  removeCompleted();
   listContainer.innerHTML = '';
   populateList(tasks);
 
