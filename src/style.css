@@ -15,8 +15,7 @@ body {
   align-items: flex-start;
   max-width: 500px;
   background-color: #fff;
-  margin: auto;
-  margin-top: 10%;
+  margin: 10% auto;
   border: 1px solid rgb(161, 161, 161);
   box-shadow: -5px 5px 10px #888;
 }
@@ -24,7 +23,7 @@ body {
 .title-div {
   padding: 10px;
   width: 100%;
-  height: 50px;
+  height: 70px;
   border-bottom: 1px solid grey;
   display: flex;
   justify-content: space-between;
@@ -33,10 +32,12 @@ body {
 
 .title-to-do {
   color: rgb(75, 75, 75);
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .input-div {
-  height: 50px;
+  height: 70px;
   padding: 10px;
   border-bottom: 1px solid grey;
   width: 100%;
@@ -51,6 +52,7 @@ body {
   width: 100%;
   height: 100%;
   font-style: italic;
+  font-size: 18px;
 }
 
 input:focus {
@@ -61,7 +63,6 @@ input:focus {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
   width: 100%;
 }
 
@@ -71,9 +72,19 @@ input:focus {
   align-items: center;
   justify-content: flex-start;
   gap: 5px;
-  height: 50px;
+  height: 70px;
   border-bottom: 1px solid grey;
   padding: 10px;
+}
+
+.inside-div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  position: relative;
 }
 
 input[type='checkbox'] + label {
@@ -86,8 +97,24 @@ input[type='checkbox']:checked + label {
   text-decoration: line-through;
 }
 
+.item-description {
+  flex-grow: 1;
+  padding-top: 3%;
+  height: 100%;
+}
+
+.item-description:focus {
+  outline: none;
+  color: grey;
+  font-style: italic;
+}
+
+.item-description-done {
+  text-decoration: line-through;
+  color: gray;
+}
+
 .dynamic-icons {
-  margin-left: auto;
   cursor: all-scroll;
   color: grey;
 }
@@ -108,8 +135,19 @@ input[type='checkbox']:checked + label {
   color: black;
 }
 
+.trash-icon {
+  cursor: pointer;
+  position: absolute;
+  top: 35%;
+  right: 0;
+}
+
+.display-icon {
+  display: none;
+}
+
 .clear-btn-div {
-  height: 50px;
+  height: 70px;
   padding: 10px;
   width: 100%;
   background-color: silver;
@@ -119,7 +157,7 @@ input[type='checkbox']:checked + label {
 
 .clear-btn {
   border: none;
-  color: rgb(75, 75, 75);
+  color: grey;
   background-color: inherit;
   font-size: 16px;
 }
