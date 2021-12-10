@@ -3,7 +3,7 @@
 ###### Please delete this line and the next one
 ###### To Do List can be a webpage/website, a web app, a software and so on
 
-Permission is hereby granted, free of charge, to any person obtaining a copy of this [APP TYPE] and associated documentation files, to deal in the [To Do List] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [To Do List], and to permit persons to whom the [To Do List] is furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of this [To Do List] and associated documentation files, to deal in the [To Do List] without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the [To Do List], and to permit persons to whom the [To Do List] is furnished to do so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the [To Do List].
 
